@@ -1,0 +1,30 @@
+/* 
+* Apenas para praticar 
+* Iniciante: Praticando if, else, for.
+*/
+#include<iostream>
+
+using namespace std;
+
+int main () {
+	int vl, qnt;
+	char resp;
+	cout<<"\n *************************************************************";
+	cout<<"\n  Programa simples para praticar a estrutura de repeticao FOR ";
+	cout<<"\n                Utilizando tambem IF e ELSE                   ";
+	cout<<"\n *************************************************************";
+	cout<<"\n\n\nVoce deseja prosseguir? [S/N]:  ";
+	cin>>resp;
+	
+	if(resp == 's' || resp == 'S') {
+		cout<<"\nDeseja contar ate qual numero?:  ";
+		cin>>qnt;
+		for(vl = 0; vl <=qnt; vl++) {
+		cout<<vl<<"\n";
+		}
+	} else {
+		cout<<"\n    PROGRAMA ENCERRADO!\n\n";
+	}
+	
+	return (0);
+}
