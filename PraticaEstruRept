@@ -14,14 +14,28 @@ int main () {
 	cout<<"\n                Utilizando tambem IF e ELSE                   ";
 	cout<<"\n *************************************************************";
 	cout<<"\n\n\nVoce deseja prosseguir? [S/N]:  ";
+	
+	/* Se continuar, o programa pergunta até que número você deseja contar.
+	Se não quiser continuar, ele irá encerrar (ao digitar N ou n) */
+	
 	cin>>resp;
 	
 	if(resp == 's' || resp == 'S') {
 		cout<<"\nDeseja contar ate qual numero?:  ";
+		
+		/* Bastante simples, você informa até qual número deseja ser contato.
+		Nem precisava explicar, certo? rs */
+		
 		cin>>qnt;
+		
 		for(vl = 0; vl <=qnt; vl++) {
+			/* Valor inicial é zero que irá somar +1 até chegar a quantidade 
+			desejada. */
+			
 		cout<<vl<<"\n";
+		
 		}
+		
 	} else {
 		cout<<"\n    PROGRAMA ENCERRADO!\n\n";
 	}
