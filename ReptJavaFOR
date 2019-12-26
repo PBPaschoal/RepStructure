@@ -1,0 +1,48 @@
+
+/* Mesmo programa anterior só que dessa vez em Java */
+
+package teste.projeto.pkgfor;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class TesteProjetoFOR {
+    
+    public static void main(String[] args) throws IOException {
+        int vl, qnt;
+        char resp;
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println(" *************************************************************");
+        System.out.println("  Programa simples para praticar a estrutura de repeticao FOR ");
+        System.out.println("                Utilizando tambem IF e ELSE                   ");
+        System.out.println(" *************************************************************");
+        System.out.println("Voce deseja prosseguir? [S/N]:  ");
+        
+        /* Se continuar, o programa pergunta até que número você deseja contar.
+	Se não quiser continuar, ele irá encerrar (ao digitar N ou n) */
+        
+        resp = (char)System.in.read();
+        
+        if((resp == 's') || (resp == 'S')) {
+            System.out.println("Deseja contar ate qual numero?:  ");
+            
+            /* Bastante simples, você informa até qual número deseja ser contato.
+            Nem precisava explicar, certo? rs */
+            
+            qnt = teclado.nextInt();
+            for(vl = 0; vl <=qnt; vl++) {
+                
+                /* Valor inicial é zero que irá somar +1 até chegar a quantidade 
+		desejada. */
+                
+                System.out.println(vl);
+            }
+        } else {
+            System.out.println("     PROGRAMA ENCERRADO! \n");
+        }
+    }
+    
+}
