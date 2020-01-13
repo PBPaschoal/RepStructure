@@ -1,0 +1,81 @@
+/* Rio de Janeiro - RJ Dia: 13/01/2020, segunda-feira às 10:10hrs
+** Criado no Notepad++ >>>> Depois testado online em: https://www.onlinegdb.com/online_c++_compiler
+** Se você viu os anteriores, são apenas exemplos para teste/praticar
+** Feito por: Paulo Bruno Paschoal
+**/
+
+#include<iostream>
+
+using namespace std;
+
+
+int main(){
+
+    int cs,vs,resp1,dol, vezs;
+	double convert, camb = 4.28, real = 4.08;
+    
+    cout<<"\nQuantas vezes deseja consultar?: ";
+	cin>>cs;
+	
+	for(vs=1; vs<=cs; vs++){
+	//Testando for
+		do{
+		//Testando do while
+			cout<<"\n****************************";
+			cout<<"\n>>>>>>> INICIALIZANDO <<<<<<";
+			cout<<"\n****************************\n\n";
+			cout<<"\n::::::: MENU INICIAL :::::::\n";
+			cout<<"\n[1] Escolha";
+			cout<<"\n[2] Mensagem";
+			cout<<"\n[3] Contagem";
+			cout<<"\n[4] Converter Dolar em Real\n";
+			cin>>resp1;
+			
+			
+			switch(resp1){
+			//Testando switch
+				case 1:
+					cout<<"\n[5] - Mensagem ";
+					cout<<"\n[0] - Voltar\n";
+					cin>>resp1;
+				if(resp1==5){
+				//Testando if, apresentar mensagem ou voltar ao menu inicial
+					cout<<"\nOpcao (5) selecionada:";
+					cout<<"\nVoce digitou "<<resp1;
+					break;
+				case 2:
+					cout<<"\nOpcao (2) selecionada:";
+					cout<<"\nVoce digitou "<<resp1;
+					break;
+				case 3:
+					cout<<"\nOpcao (3) selecionada:";
+					cout<<"\nAte quanto deseja contar?: ";
+					cin>>cs;
+					for(vs=1; vs<=cs; vs++ ){
+						cout<<"\n";
+						cout<<vs;
+					}
+					break;
+				case 4:
+					cout<<"\nOpcao (4) selecionada:";
+					cout<<"\n::::::::: DOLAR EM REAL :::::::::";
+					cout<<"\nQuantas vezes deseja consultar?: ";
+					cin>>vezs;
+					for(vs = 1; vs <= vezs; vs++) {
+					//Teste for para quantidade de vezes deseja consultar o dolar em real
+						cout<<"\nQuantos dolares deseja converter em real?: R$ ";
+						cin>>dol;
+						convert = dol * real;
+						cout<<"Valor de R$ "<<convert<<" reais";
+						cout<<"\nValor em cambio para comprar R$ "<<camb * dol;
+						}
+					break;
+				default:
+					cout<<"\nOpcao invalida.";
+				}
+			}
+		} while(resp1==0);
+	}
+
+	return(0);	
+}
