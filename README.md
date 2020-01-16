@@ -13,7 +13,7 @@ PraticaEstruRept: em C++
 Praticando if, else e for no mesmo programa.
 Iniciando com a pergunta se deseja continuar, digitando s/S para prosseguir. Caso não, digite n/N e será encerrado.
 Ao digitar s/S ele irá perguntar até quanto você deseja contar e o comando for será inicializado a contagem desejada.
-=====================================================================================================================
+
 
 2 ) Dolfrsw:
 
@@ -30,4 +30,3 @@ for;
 do while;
 if;
 switch.
-=================================================================
